@@ -1,0 +1,17 @@
+{
+    "rest-client.environmentVariables": {
+        "$shared": {
+          "apiUrl": "https://reqres.in",
+          "localhost": "http://localhost:8012",
+          "production_235": "http://10.20.0.235",
+          "production_hosweb": "http://hosweb.med.cmu.ac.th/gateway",
+          "site_url_transfer":"http://localhost:8012/sddn1"
+        },
+        "test1": {
+          "userId": "1"
+        },
+        "test2": {
+          "userId": "2"
+        }
+      }
+}

@@ -1,0 +1,24 @@
+### without redis
+GET http://localhost:3333/noredis?date=2021-04-01 HTTP/1.1
+
+
+### with redis caching
+GET http://localhost:3333/redis?date=2021-04-01 HTTP/1.1
+
+
+
+### clear redis
+GET  http://localhost:3333/redis/clear/ HTTP/1.1
+
+###
+@userId = 3
+
+GET {{apiUrl}}/api/users/{{userId}}
+
+###
+POST https://reqres.in/api/users
+Content-Type: application/json
+{
+    "name": "Hola",
+    "job": "programmer"
+}
