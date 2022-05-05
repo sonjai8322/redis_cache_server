@@ -55,7 +55,7 @@ app.get("/redis", async(req, res) => {
             );
             let get = fetch.data;
             // redisClient.set("coviddata", JSON.stringify(get));
-            redisClient.setex("coviddata", 10, JSON.stringify(get));
+            redisClient.setex("coviddata", 30, JSON.stringify(get));
             let result = null;
             get.forEach((element) => {
                 if (element.txn_date === date) {
